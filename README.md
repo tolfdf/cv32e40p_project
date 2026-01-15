@@ -28,7 +28,7 @@ create\_wave\_config
 ...
 ...
 
-it ends at 1140 ns !!!
+// it ends at 1140 ns !!!
 
 
 
@@ -124,4 +124,4 @@ add\_wave -radix hex /tb\_top2/exit\_value
 
 
 
-it ends at 5300 ns !!!
+// it ends at 5300 ns !!!
