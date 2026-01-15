@@ -54,7 +54,7 @@ create\_wave\_config
 **Simulation**
 
 
-cd C:/Users/mpakasa/Desktop/cv32e40p\_project/cv32e40p-vivado\_synthesis/example\_tb/
+cd C:/Users/(the path of the project)
 
 exec rm -rf xsim.dir
 
