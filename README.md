@@ -1,7 +1,9 @@
 In this project i run the simulation through these commands on the tcl console :
 
 Bellow are the two testbench 
+
 the tb_top is for simulation 
+
 the tb_top2 is for implementation 
 
 **tb\_top**
