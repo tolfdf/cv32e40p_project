@@ -6,6 +6,8 @@ the tb_top is for simulation
 
 the tb_top2 is for implementation 
 
+
+
 **tb\_top**
 
 
@@ -26,8 +28,11 @@ xsim tb\_top\_sim -testplusarg firmware=./core/custom/hello.mem
 create\_wave\_config
 
 ...
+
 ...
+
 ...
+
 ...
 
 // it ends at 1140 ns !!!
