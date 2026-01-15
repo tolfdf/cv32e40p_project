@@ -14,7 +14,7 @@ the tb_top2 is for implementation
 **SIMULATION**
 
 
-cd C:/Users/mpakasa/Desktop/cv32e40p\_project/cv32e40p-vivado\_synthesis/example\_tb/
+cd C:/Users/(the path of the project)
 
 xvlog -prj files.prj
 
