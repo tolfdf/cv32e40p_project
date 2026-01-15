@@ -1,0 +1,25 @@
+TAGS
+*.swp
+*~
+*.o
+*.log
+*.vcd
+*.xml
+*.dbg
+*.wlf
+*.elf
+*.hex
+*.map
+*.out
+*.json
+*.dump
+.build-rtl
+.lib-rtl
+.opt-rtl
+/build
+/Bender.lock
+/Bender.local
+
+# modelsim files
+work
+transcript

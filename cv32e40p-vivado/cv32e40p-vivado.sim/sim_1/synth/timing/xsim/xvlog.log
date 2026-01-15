@@ -1,0 +1,29 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado/cv32e40p-vivado.sim/sim_1/synth/timing/xsim/tb_top2_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cv32e40p_aligner
+INFO: [VRFC 10-311] analyzing module cv32e40p_alu
+INFO: [VRFC 10-311] analyzing module cv32e40p_alu_div
+INFO: [VRFC 10-311] analyzing module cv32e40p_controller
+INFO: [VRFC 10-311] analyzing module cv32e40p_core
+INFO: [VRFC 10-311] analyzing module cv32e40p_core_memory
+INFO: [VRFC 10-311] analyzing module cv32e40p_cs_registers
+INFO: [VRFC 10-311] analyzing module cv32e40p_decoder
+INFO: [VRFC 10-311] analyzing module cv32e40p_ex_stage
+INFO: [VRFC 10-311] analyzing module cv32e40p_fifo
+INFO: [VRFC 10-311] analyzing module cv32e40p_id_stage
+INFO: [VRFC 10-311] analyzing module cv32e40p_if_stage
+INFO: [VRFC 10-311] analyzing module cv32e40p_int_controller
+INFO: [VRFC 10-311] analyzing module cv32e40p_load_store_unit
+INFO: [VRFC 10-311] analyzing module cv32e40p_memory
+INFO: [VRFC 10-311] analyzing module cv32e40p_mult
+INFO: [VRFC 10-311] analyzing module cv32e40p_obi_interface
+INFO: [VRFC 10-311] analyzing module cv32e40p_popcnt
+INFO: [VRFC 10-311] analyzing module cv32e40p_prefetch_buffer
+INFO: [VRFC 10-311] analyzing module cv32e40p_prefetch_controller
+INFO: [VRFC 10-311] analyzing module cv32e40p_register_file
+INFO: [VRFC 10-311] analyzing module cv32e40p_sleep_unit
+INFO: [VRFC 10-311] analyzing module fpga_tdp_ram
+INFO: [VRFC 10-311] analyzing module xpm_memory_base
+INFO: [VRFC 10-311] analyzing module xpm_memory_tdpram
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/example_tb/core/tb_top2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top2

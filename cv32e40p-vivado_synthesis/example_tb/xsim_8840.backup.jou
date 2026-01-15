@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# xsim v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jan 12 16:28:44 2026
+# Process ID: 8840
+# Current directory: C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/example_tb
+# Command line: xsim.exe -source {xsim.dir/tb_top2_sim/xsim_script.tcl}
+# Log file: C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/example_tb/xsim.log
+# Journal file: C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/example_tb\xsim.jou
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/tb_top2_sim/xsim_script.tcl
+open_wave_config C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/example_tb/tb_top2_sim.wcfg
+run 100000 ns
+run 1000000 ns
+run 50000 ns
+close_sim

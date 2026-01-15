@@ -1,0 +1,44 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado/cv32e40p-vivado.sim/sim_1/synth/func/xsim/tb_top_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cv32e40p_aligner
+INFO: [VRFC 10-311] analyzing module cv32e40p_alu
+INFO: [VRFC 10-311] analyzing module cv32e40p_alu_div
+INFO: [VRFC 10-311] analyzing module cv32e40p_controller
+INFO: [VRFC 10-311] analyzing module cv32e40p_core
+INFO: [VRFC 10-311] analyzing module cv32e40p_core_memory
+INFO: [VRFC 10-311] analyzing module cv32e40p_cs_registers
+INFO: [VRFC 10-311] analyzing module cv32e40p_decoder
+INFO: [VRFC 10-311] analyzing module cv32e40p_ex_stage
+INFO: [VRFC 10-311] analyzing module cv32e40p_fifo
+INFO: [VRFC 10-311] analyzing module cv32e40p_id_stage
+INFO: [VRFC 10-311] analyzing module cv32e40p_if_stage
+INFO: [VRFC 10-311] analyzing module cv32e40p_int_controller
+INFO: [VRFC 10-311] analyzing module cv32e40p_load_store_unit
+INFO: [VRFC 10-311] analyzing module cv32e40p_memory
+INFO: [VRFC 10-311] analyzing module cv32e40p_mult
+INFO: [VRFC 10-311] analyzing module cv32e40p_obi_interface
+INFO: [VRFC 10-311] analyzing module cv32e40p_popcnt
+INFO: [VRFC 10-311] analyzing module cv32e40p_prefetch_buffer
+INFO: [VRFC 10-311] analyzing module cv32e40p_prefetch_controller
+INFO: [VRFC 10-311] analyzing module cv32e40p_register_file
+INFO: [VRFC 10-311] analyzing module cv32e40p_sleep_unit
+INFO: [VRFC 10-311] analyzing module fpga_tdp_ram
+INFO: [VRFC 10-311] analyzing module xpm_memory_base
+INFO: [VRFC 10-311] analyzing module xpm_memory_tdpram
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/example_tb/core/amo_shim.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module amo_shim
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/rtl/cv32e40p_aligner.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cv32e40p_aligner
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cv32e40p_aligner' [C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/rtl/cv32e40p_aligner.sv:23]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/rtl/include/cv32e40p_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/rtl/cv32e40p_alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cv32e40p_alu
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cv32e40p_alu' [C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/rtl/cv32e40p_alu.sv:28]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/rtl/cv32e40p_alu_div.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cv32e40p_alu_div
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'cv32e40p_alu_div' [C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/rtl/cv32e40p_alu_div.sv:26]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/rtl/include/cv32e40p_apu_core_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/rtl/cv32e40p_apu_disp.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cv32e40p_apu_disp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/rtl/cv32e40p_compressed_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cv32e40p_compressed_decoder

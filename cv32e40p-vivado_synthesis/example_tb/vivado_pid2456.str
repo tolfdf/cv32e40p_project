@@ -1,0 +1,326 @@
+/*
+
+Xilinx xsim v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 2456
+License: Customer
+
+Current time: 	Mon Jan 05 15:15:01 CET 2026
+Time zone: 	Central European Standard Time (Europe/Paris)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 103 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	mpakasa
+User home directory: C:/Users/mpakasa
+User working directory: C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/example_tb
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/mpakasa/AppData/Roaming/Xilinx/xsim/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/mpakasa/AppData/Roaming/Xilinx/xsim/2019.2/
+Vivado layouts directory: C:/Users/mpakasa/AppData/Roaming/Xilinx/xsim/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/example_tb/xsim.log
+Vivado journal file location: 	C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/example_tb/xsim.jou
+Engine tmp dir: 	C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/example_tb/.Xil/xsim-2456-LC1636
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 674 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// bB (cr):  Sourcing Tcl script 'xsim.dir/tb_top2_sim/xsim_script.tcl' : addNotify
+// Tcl Message: source xsim.dir/tb_top2_sim/xsim_script.tcl 
+// Tcl Message: # set_param project.enableReportConfiguration 0 # load_feature core 
+// TclEventType: LOAD_FEATURE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: # current_fileset 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 67 MB (+67452kb) [00:00:08]
+// [Engine Memory]: 757 MB (+642243kb) [00:00:08]
+// [GUI Memory]: 95 MB (+26037kb) [00:00:08]
+// [GUI Memory]: 107 MB (+7381kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  1065 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 795 MB. GUI used memory: 66 MB. Current time: 1/5/26, 3:15:03 PM CET
+// Tcl Message: # xsim {tb_top2_sim} -testplusarg firmware=./core/custom/hello.mem -autoloadwcfg 
+// Tcl Message: Vivado Simulator 2019.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// [Engine Memory]: 808 MB (+13548kb) [00:00:10]
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: open_wave_config C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/example_tb/tb_top2_sim.wcfg 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// [GUI Memory]: 112 MB (+12kb) [00:00:11]
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 820 MB. GUI used memory: 56 MB. Current time: 1/5/26, 3:15:08 PM CET
+// TclEventType: STOP_PROGRESS_DIALOG
+dismissDialog("Sourcing Tcl script 'xsim.dir/tb_top2_sim/xsim_script.tcl'"); // bB (cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Command: 'rdi::info_commands bd::match_path'
+// Elapsed time: 22 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "add_wave /tb_top2/core_memory_i/uart_tx_o", true); // aF (ac, cr)
+// Tcl Command: 'add_wave /tb_top2/core_memory_i/uart_tx_o'
+// Tcl Command: 'add_wave /tb_top2/core_memory_i/uart_tx_o'
+// Tcl Message: add_wave /tb_top2/core_memory_i/uart_tx_o 
+// Tcl Message: ERROR: [Wavedata 42-471] Note: Nothing was found for the following items: /tb_top2/core_memory_i/uart_tx_o  
+// Tcl Message: ERROR: [Common 17-39] 'add_wave' failed due to earlier errors. 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 528, 35); // dT (af, cr)
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT (af, cr)
+// Tcl Command: 'rdi::info_commands {ru*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "run 10 ns", true); // aF (ac, cr)
+// Tcl Command: 'run 10 ns'
+// Tcl Command: 'run 10 ns'
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// Tcl Message: run 10 ns 
+// bB (cr):  Tcl Command Line : addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+dismissDialog("Tcl Command Line"); // bB (cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Command: 'rdi::info_commands {r*}'
+// Tcl Command: 'rdi::info_commands {ru*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "run 10 ns", true); // aF (ac, cr)
+// Tcl Command: 'run 10 ns'
+// Tcl Command: 'run 10 ns'
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// Tcl Message: run 10 ns 
+// bB (cr):  Tcl Command Line : addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+dismissDialog("Tcl Command Line"); // bB (cr)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 57 MB. Current time: 1/5/26, 3:16:12 PM CET
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 56 MB. Current time: 1/5/26, 3:16:13 PM CET
+// Elapsed time: 15 seconds
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, exit_value[31:0]]", 18); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, exit_value[31:0]]", 18); // a (r, cr)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 37 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aF (ac, cr)
+// Tcl Command: 'rdi::info_commands {ls*}'
+// Tcl Command: 'scope /tb_top2; ls'
+// Tcl Command: 'scope /tb_top2'
+// Tcl Message: scope /tb_top2 
+// Tcl Message: invalid command name "scope" 
+// Tcl Command: 'rdi::info_commands {ls*}'
+// Elapsed time: 10 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "ls", true); // aF (ac, cr)
+// Tcl Command: 'ls'
+// Tcl Command: 'ls'
+// Tcl Message: ls 
+maximizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // aA (aL, cr)
+// Waveform: addNotify
+// Elapsed time: 37 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 850, 126); // dT (af, cr)
+// Waveform: addNotify
+// Waveform: addNotify
+unMaximizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // aA (aL, cr)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 175 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "exec xvlog -sv -prj files_tb_top2.prj", true); // aF (ac, cr)
+// Tcl Command: 'exec xvlog -sv -prj files_tb_top2.prj'
+// Tcl Command: 'exec xvlog -sv -prj files_tb_top2.prj'
+// Tcl Message: exec xvlog -sv -prj files_tb_top2.prj 
+// Elapsed time: 18 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "exec xelab -debug typical -top tb_top2 -snapshot tb_top2_sim", true); // aF (ac, cr)
+// Tcl Command: 'exec xelab -debug typical -top tb_top2 -snapshot tb_top2_sim'
+// [GUI Memory]: 118 MB (+82kb) [00:06:07]
+// Tcl Command: 'exec xelab -debug typical -top tb_top2 -snapshot tb_top2_sim'
+// Tcl Message: exec xelab -debug typical -top tb_top2 -snapshot tb_top2_sim 
+// Tcl Message: Vivado Simulator 2019.2 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved. Running: C:\Xilinx\Vivado\2019.2\bin\unwrapped\win64.o\xelab.exe -debug typical -top tb_top2 -snapshot tb_top2_sim  Multi-threading is on. Using 10 slave threads. Starting static elaboration Pass Through NonSizing Optimizer ERROR: [VRFC 10-2063] Module <xpm_memory_tdpram> not found while processing module instance <xpm_memory_tdpram_inst> [C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/rtl/fpga_tdp_ram.sv:379] ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed. child process exited abnormally 
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 265, 47); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 63, 38); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1, 10); // dT (af, cr)
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT (af, cr)
+// Elapsed time: 30 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "exec xvlog -sv -L xpm -prj files_tb_top2.prj", true); // aF (ac, cr)
+// Tcl Command: 'exec xvlog -sv -L xpm -prj files_tb_top2.prj'
+// Tcl Command: 'exec xvlog -sv -L xpm -prj files_tb_top2.prj'
+// Tcl Message: exec xvlog -sv -L xpm -prj files_tb_top2.prj 
+// Elapsed time: 12 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aF (ac, cr)
+// Tcl Command: 'exec xelab -debug typical \;     -timescale 1ns/1ps \;     -top tb_top2 \;     -snapshot tb_top2_sim \;     -L xpm \;     -L xil_defaultlib'
+// Tcl Command: 'exec xelab -debug typical \;     -timescale 1ns/1ps \;     -top tb_top2 \;     -snapshot tb_top2_sim \;     -L xpm \;     -L xil_defaultlib'
+// Tcl Message: exec xelab -debug typical \     -timescale 1ns/1ps \     -top tb_top2 \     -snapshot tb_top2_sim \     -L xpm \     -L xil_defaultlib 
+// Elapsed time: 15 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aF (ac, cr)
+// Tcl Command: 'exec xelab -debug typical \;   -top tb_top2 \;   -snapshot tb_top2_sim \;   -L xpm \;   -L xil_defaultlib'
+// Tcl Command: 'exec xelab -debug typical \;   -top tb_top2 \;   -snapshot tb_top2_sim \;   -L xpm \;   -L xil_defaultlib'
+// Tcl Message: exec xelab -debug typical \   -top tb_top2 \   -snapshot tb_top2_sim \   -L xpm \   -L xil_defaultlib 
+maximizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // aA (aL, cr)
+// Waveform: addNotify
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 222, 766); // dT (af, cr)
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT (af, cr)
+// Waveform: addNotify
+// Waveform: addNotify
+// Elapsed time: 209 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // aA (aL, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 842 MB. GUI used memory: 57 MB. Current time: 1/5/26, 3:25:46 PM CET
+// Elapsed time: 157 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aF (ac, cr)
+// Tcl Command: 'exec xelab -debug typical \;     -timescale 1ns/1ps \;     -top tb_top2 \;     -snapshot tb_top2_sim \;     -L xpm \;     -L xil_defaultlib'
+// Tcl Command: 'exec xelab -debug typical \;     -timescale 1ns/1ps \;     -top tb_top2 \;     -snapshot tb_top2_sim \;     -L xpm \;     -L xil_defaultlib'
+// Tcl Message: exec xelab -debug typical \     -timescale 1ns/1ps \     -top tb_top2 \     -snapshot tb_top2_sim \     -L xpm \     -L xil_defaultlib 
+// Elapsed time: 92 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "exec xvlog -sv -L xpm -prj files_tb_top2.prj", true); // aF (ac, cr)
+// Tcl Command: 'exec xvlog -sv -L xpm -prj files_tb_top2.prj'
+// Tcl Command: 'exec xvlog -sv -L xpm -prj files_tb_top2.prj'
+// Tcl Message: exec xvlog -sv -L xpm -prj files_tb_top2.prj 
+// [Engine Memory]: 849 MB (+616kb) [00:15:02]
+// HMemoryUtils.trashcanNow. Engine heap size: 852 MB. GUI used memory: 57 MB. Current time: 1/5/26, 3:29:59 PM CET
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aF (ac, cr)
+// Tcl Command: 'exec xelab -debug typical \;   -top tb_top2 \;   -snapshot tb_top2_sim \;   -L xpm \;   -L xil_defaultlib'
+// Tcl Command: 'exec xelab -debug typical \;   -top tb_top2 \;   -snapshot tb_top2_sim \;   -L xpm \;   -L xil_defaultlib'
+// Tcl Message: exec xelab -debug typical \   -top tb_top2 \   -snapshot tb_top2_sim \   -L xpm \   -L xil_defaultlib 
+maximizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // aA (aL, cr)
+// Waveform: addNotify
+// Elapsed time: 41 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aF (ac, cr)
+// Tcl Command: 'exec xelab -debug typical \;     -timescale 1ns/1ps \;     -top tb_top2 \;     -snapshot tb_top2_sim \;     -L xpm \;     -L xil_defaultlib'
+// Tcl Command: 'exec xelab -debug typical \;     -timescale 1ns/1ps \;     -top tb_top2 \;     -snapshot tb_top2_sim \;     -L xpm \;     -L xil_defaultlib'
+// Tcl Message: exec xelab -debug typical \     -timescale 1ns/1ps \     -top tb_top2 \     -snapshot tb_top2_sim \     -L xpm \     -L xil_defaultlib 
+// Elapsed time: 20 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 240, 741); // dT (af, cr)
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 240, 645); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 240, 645); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 306, 729); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 282, 738); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 285, 743); // dT (af, cr)
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT (af, cr)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1173, 737); // dT (af, cr)
+// Elapsed time: 137 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aF (ac, cr)
+// Tcl Command: 'exec xelab -debug typical \;     -timescale 1ns/1ps \;     -top tb_top2 \;     -snapshot tb_top2_sim \;     -L xpm \;     -L xil_defaultlib'
+// Tcl Command: 'exec xelab -debug typical \;     -timescale 1ns/1ps \;     -top tb_top2 \;     -snapshot tb_top2_sim \;     -L xpm \;     -L xil_defaultlib'
+// Tcl Message: exec xelab -debug typical \     -timescale 1ns/1ps \     -top tb_top2 \     -snapshot tb_top2_sim \     -L xpm \     -L xil_defaultlib 
+// Elapsed time: 43 seconds
+selectView(PAResourceOtoP.PAViews_MESSAGES, "Messages", 75, 75, 1898, 855, false, false, false, true, false); // at (aA, cr) - Popup Trigger

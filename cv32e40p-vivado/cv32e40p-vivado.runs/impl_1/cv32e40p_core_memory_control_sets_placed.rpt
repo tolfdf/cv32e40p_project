@@ -1,0 +1,155 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Jan 14 09:55:03 2026
+| Host         : LC1636 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file cv32e40p_core_memory_control_sets_placed.rpt
+| Design       : cv32e40p_core_memory
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    77 |
+|    Minimum number of control sets                        |    77 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    81 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    77 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     5 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    61 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |              67 |           47 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            2026 |          986 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------+----------------------------------------------------------------------------------+--------------------------------------------+------------------+----------------+
+|   Clock Signal   |                                   Enable Signal                                  |              Set/Reset Signal              | Slice Load Count | Bel Load Count |
++------------------+----------------------------------------------------------------------------------+--------------------------------------------+------------------+----------------+
+|  clk_i_IBUF_BUFG | cv32e40p_memory_i/tests_passed_o4_out                                            | cv32e40p_memory_i/uart_tx_i/rst_ni_0       |                1 |              1 |
+|  clk_i_IBUF_BUFG | cv32e40p_memory_i/exit_value_o[31]_i_1_n_0                                       | cv32e40p_memory_i/uart_tx_i/rst_ni_0       |                1 |              1 |
+|  clk_i_IBUF_BUFG | cv32e40p_memory_i/tests_failed_o2_out                                            | cv32e40p_memory_i/uart_tx_i/rst_ni_0       |                1 |              1 |
+|  clk_i_IBUF_BUFG |                                                                                  |                                            |                2 |              2 |
+|  clk_i_IBUF_BUFG |                                                                                  | cv32e40p_memory_i/uart_tx_i/rst_ni_0       |                2 |              2 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/mult_i/FSM_sequential_mulh_CS_reg[2]_0[0]                      | core_i/id_stage_i/register_file_i/rst_ni_0 |                2 |              4 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/mult_i/FSM_sequential_mulh_CS_reg[1]_11[0]                     | core_i/id_stage_i/register_file_i/rst_ni_0 |                2 |              5 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/mult_i/FSM_sequential_mulh_CS_reg[1]_10[0]                     | core_i/id_stage_i/register_file_i/rst_ni_0 |                2 |              5 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/regfile_we_ex_o_reg_1[0]                                       | core_i/id_stage_i/register_file_i/rst_ni_0 |                2 |              5 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/alu_i/alu_div_i/Cnt_DP[5]_i_1_n_0                              | core_i/id_stage_i/register_file_i/rst_ni_0 |                2 |              6 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/controller_i/E[0]                                              | core_i/id_stage_i/register_file_i/rst_ni_0 |                3 |              6 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/controller_i/ctrl_fsm_cs_reg[3]_7[0]                           | core_i/id_stage_i/register_file_i/rst_ni_0 |                3 |              6 |
+|  clk_i_IBUF_BUFG | core_i/load_store_unit_i/ctrl_update                                             | core_i/id_stage_i/register_file_i/rst_ni_0 |                3 |              6 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/mult_i/FSM_sequential_mulh_CS_reg[1]_14                        | core_i/id_stage_i/register_file_i/rst_ni_0 |                4 |              7 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/controller_i/ctrl_fsm_cs_reg[3]_0[0]                           | core_i/id_stage_i/register_file_i/rst_ni_0 |                7 |             15 |
+|  clk_i_IBUF_BUFG | core_i/if_stage_i/prefetch_buffer_i/fifo_i/E[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |                8 |             15 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/csr_op_ex_o_reg[1]_1[0]                                        | core_i/id_stage_i/register_file_i/rst_ni_0 |                5 |             16 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/controller_i/ctrl_fsm_cs_reg[3]_2[0]                           | core_i/id_stage_i/register_file_i/rst_ni_0 |               11 |             18 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/alu_operand_b_ex_o_reg[0]_0[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               11 |             19 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/controller_i/ctrl_fsm_cs_reg[3]_5[0]                           | core_i/id_stage_i/register_file_i/rst_ni_0 |                7 |             24 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[1]_2[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               12 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_14[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               13 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[1]_1[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               16 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[1]_4[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |                9 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[1]_0[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               17 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[1]_5[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               12 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_3[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               14 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_18[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               19 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_8[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               11 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[1]_3[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               16 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[1]_6[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               17 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_10[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               10 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_16[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               15 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_4[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               18 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[1]_7[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               18 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_1[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               19 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_13[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               15 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_19[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               18 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_0[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               14 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_11[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               20 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_12[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               20 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_15[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               21 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_2[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               15 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_17[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               18 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_5[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               17 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_6[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               17 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_7[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               15 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_waddr_lsu_reg[0]_9[0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               18 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_we_lsu_reg_1[0]                                        | core_i/id_stage_i/register_file_i/rst_ni_0 |               15 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/regfile_we_lsu_reg_0[0]                                        | core_i/id_stage_i/register_file_i/rst_ni_0 |               15 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/alu_i/alu_div_i/ARegEn_S                                       | core_i/id_stage_i/register_file_i/rst_ni_0 |                8 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/alu_i/alu_div_i/BRegEn_S                                       | core_i/id_stage_i/register_file_i/rst_ni_0 |               13 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/FSM_onehot_State_SP_reg[1][0]                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               16 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/gen_mcountinhibit[0].gen_implemented.mcountinhibit_q_reg[0][0] | core_i/id_stage_i/register_file_i/rst_ni_0 |               16 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/gen_mcountinhibit[2].gen_implemented.mcountinhibit_q_reg[2][0] | core_i/id_stage_i/register_file_i/rst_ni_0 |               16 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/gen_mcountinhibit[2].gen_implemented.mcountinhibit_q_reg[2][1] | core_i/id_stage_i/register_file_i/rst_ni_0 |                9 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/mult_i/FSM_sequential_mulh_CS_reg[1]_13[0]                     | core_i/id_stage_i/register_file_i/rst_ni_0 |               15 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/alu_operand_b_ex_o_reg[2]_0[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               18 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/alu_operand_b_ex_o_reg[2]_1[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               18 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/mult_i/FSM_sequential_mulh_CS_reg[1]_12[0]                     | core_i/id_stage_i/register_file_i/rst_ni_0 |               17 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/alu_operand_b_ex_o_reg[3]_4[0]                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               17 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/csr_op_ex_o_reg[1]_0[0]                                        | core_i/id_stage_i/register_file_i/rst_ni_0 |               17 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/csr_op_ex_o_reg[1]_0[1]                                        | core_i/id_stage_i/register_file_i/rst_ni_0 |               13 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/controller_i/branch_in_ex_o_reg_1[0]                           | core_i/id_stage_i/register_file_i/rst_ni_0 |               15 |             32 |
+|  clk_i_IBUF_BUFG | core_i/if_stage_i/prefetch_buffer_i/fifo_i/mem_q                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               13 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/gen_mcountinhibit[0].gen_implemented.mcountinhibit_q_reg[0][1] | core_i/id_stage_i/register_file_i/rst_ni_0 |                7 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/controller_i/ctrl_fsm_cs_reg[3]_8[0]                           | core_i/id_stage_i/register_file_i/rst_ni_0 |               21 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/controller_i/csr_op_ex_o_reg[0]_1[0]                           | core_i/id_stage_i/register_file_i/rst_ni_0 |               12 |             32 |
+|  clk_i_IBUF_BUFG | core_i/if_stage_i/aligner_i/pc_q                                                 | core_i/id_stage_i/register_file_i/rst_ni_0 |               12 |             32 |
+|  clk_i_IBUF_BUFG | core_i/load_store_unit_i/rdata_q0                                                | core_i/id_stage_i/register_file_i/rst_ni_0 |               22 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/controller_i/ctrl_fsm_cs_reg[3]_6[0]                           | core_i/id_stage_i/register_file_i/rst_ni_0 |               18 |             32 |
+|  clk_i_IBUF_BUFG | core_i/id_stage_i/controller_i/prepost_useincr_ex_o_reg[0]                       | core_i/id_stage_i/register_file_i/rst_ni_0 |               13 |             32 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/E[0]                                                           | core_i/id_stage_i/register_file_i/rst_ni_0 |               16 |             32 |
+|  clk_i_IBUF_BUFG | core_i/if_stage_i/prefetch_buffer_i/fifo_i/mem_q[0][31]_i_1_n_0                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               15 |             32 |
+|  clk_i_IBUF_BUFG |                                                                                  | core_i/id_stage_i/register_file_i/rst_ni_0 |               45 |             65 |
+|  clk_i_IBUF_BUFG | core_i/ex_stage_i/mult_i/FSM_sequential_mulh_CS_reg[2]_2[0]                      | core_i/id_stage_i/register_file_i/rst_ni_0 |               41 |             67 |
+|  clk_i_IBUF_BUFG | core_i/if_stage_i/aligner_i/instr_valid_id_o0                                    | core_i/id_stage_i/register_file_i/rst_ni_0 |               39 |             71 |
++------------------+----------------------------------------------------------------------------------+--------------------------------------------+------------------+----------------+
+
+

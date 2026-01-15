@@ -1,0 +1,90 @@
+# ============================================================
+# Packages (MUST be first)
+# ============================================================
+sv work ../rtl/include/cv32e40p_pkg.sv
+sv work ../rtl/include/cv32e40p_fpu_pkg.sv
+sv work ../rtl/include/cv32e40p_apu_core_pkg.sv
+
+# ============================================================
+# Clocking / gating
+# ============================================================
+sv work ../rtl/cv32e40p_clock_gate.sv
+sv work ../bhv/cv32e40p_sim_clock_gate.sv
+
+# ============================================================
+# Low-level reusable RTL blocks
+# ============================================================
+sv work ../rtl/cv32e40p_sleep_unit.sv
+sv work ../rtl/cv32e40p_fifo.sv
+sv work ../rtl/cv32e40p_obi_interface.sv
+sv work ../rtl/cv32e40p_aligner.sv
+sv work ../rtl/cv32e40p_register_file_ff.sv
+sv work ../rtl/cv32e40p_popcnt.sv
+sv work ../rtl/cv32e40p_ff_one.sv
+sv work ../rtl/cv32e40p_alu_div.sv
+sv work ../rtl/cv32e40p_int_controller.sv
+#=============================================================
+#UART
+#=============================================================
+sv work ../rtl/uart_tx.sv
+# ============================================================
+# Prefetch / frontend
+# ============================================================
+sv work ../rtl/cv32e40p_prefetch_controller.sv
+sv work ../rtl/cv32e40p_prefetch_buffer.sv
+
+# ============================================================
+# Core pipeline stages
+# ============================================================
+sv work ../rtl/cv32e40p_if_stage.sv
+sv work ../rtl/cv32e40p_id_stage.sv
+sv work ../rtl/cv32e40p_ex_stage.sv
+sv work ../rtl/cv32e40p_load_store_unit.sv
+
+# ============================================================
+# Core support logic
+# ============================================================
+sv work ../rtl/cv32e40p_controller.sv
+sv work ../rtl/cv32e40p_cs_registers.sv
+sv work ../rtl/cv32e40p_alu.sv
+sv work ../rtl/cv32e40p_mult.sv
+sv work ../rtl/cv32e40p_decoder.sv
+sv work ../rtl/cv32e40p_compressed_decoder.sv
+sv work ../rtl/cv32e40p_hwloop_regs.sv
+sv work ../rtl/cv32e40p_pmp.sv
+
+# ============================================================
+# Core top
+# ============================================================
+sv work ../rtl/cv32e40p_core.sv
+
+# ============================================================
+# FPGA memory system (THIS WAS MISSING)
+# ============================================================
+sv work ../rtl/fpga_tdp_ram.sv
+sv work ../rtl/cv32e40p_memory_wrapper.sv
+sv work ../rtl/cv32e40p_core_memory.sv
+
+# ============================================================
+# Testbench infrastructure
+# ============================================================
+sv work core/include/perturbation_pkg.sv
+sv work core/cv32e40p_random_interrupt_generator.sv
+sv work core/cv32e40p_random_stall.sv
+sv work core/amo_shim.sv
+sv work core/cv32e40p_tb_subsystem.sv
+
+# ============================================================
+# Wrapper
+# ============================================================
+sv work ../bhv/cv32e40p_wrapper.sv
+
+# ============================================================
+# TB for FPGA RAM
+# ============================================================
+sv work core/tb_fpga_tdp_ram.sv
+
+# ============================================================
+# Testbench top (LAST!)
+# ============================================================
+sv work core/tb_top2.sv

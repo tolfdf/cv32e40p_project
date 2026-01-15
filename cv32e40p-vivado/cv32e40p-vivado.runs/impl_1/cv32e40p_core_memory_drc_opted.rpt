@@ -1,0 +1,246 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Jan 14 09:54:39 2026
+| Host         : LC1636 running 64-bit major release  (build 9200)
+| Command      : report_drc -file cv32e40p_core_memory_drc_opted.rpt -pb cv32e40p_core_memory_drc_opted.pb -rpx cv32e40p_core_memory_drc_opted.rpx
+| Design       : cv32e40p_core_memory
+| Device       : xc7a100tftg256-2
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 38
++-----------+----------+-----------------------------------------------------+------------+
+| Rule      | Severity | Description                                         | Violations |
++-----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| CHECK-3   | Warning  | Report rule limit reached                           | 1          |
+| DPIP-1    | Warning  | Input pipelining                                    | 8          |
+| DPOP-1    | Warning  | PREG Output pipelining                              | 4          |
+| DPOP-2    | Warning  | MREG Output pipelining                              | 3          |
+| PLCK-12   | Warning  | Clock Placer Checks                                 | 1          |
+| REQP-1839 | Warning  | RAMB36 async control check                          | 20         |
++-----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP core_i/ex_stage_i/mult_i/ input core_i/ex_stage_i/mult_i//A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP core_i/ex_stage_i/mult_i/ input core_i/ex_stage_i/mult_i//B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP core_i/ex_stage_i/mult_i/__0 input core_i/ex_stage_i/mult_i/__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP core_i/ex_stage_i/mult_i/__0 input core_i/ex_stage_i/mult_i/__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP core_i/ex_stage_i/mult_i/__1 input core_i/ex_stage_i/mult_i/__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP core_i/ex_stage_i/mult_i/short_mac input core_i/ex_stage_i/mult_i/short_mac/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP core_i/ex_stage_i/mult_i/short_mul input core_i/ex_stage_i/mult_i/short_mul/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP core_i/ex_stage_i/mult_i/short_mul input core_i/ex_stage_i/mult_i/short_mul/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP core_i/ex_stage_i/mult_i/ output core_i/ex_stage_i/mult_i//P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP core_i/ex_stage_i/mult_i/__0 output core_i/ex_stage_i/mult_i/__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP core_i/ex_stage_i/mult_i/__1 output core_i/ex_stage_i/mult_i/__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP core_i/ex_stage_i/mult_i/short_mac output core_i/ex_stage_i/mult_i/short_mac/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP core_i/ex_stage_i/mult_i/ multiplier stage core_i/ex_stage_i/mult_i//P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP core_i/ex_stage_i/mult_i/__0 multiplier stage core_i/ex_stage_i/mult_i/__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP core_i/ex_stage_i/mult_i/__1 multiplier stage core_i/ex_stage_i/mult_i/__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	clk_i_IBUF_inst (IBUF.O) is locked to H16
+	clk_i_IBUF_BUFG_inst (BUFG.I) cannot be placed
+
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/cs_registers_i/gen_trigger_regs.tmatch_control_exec_q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/cs_registers_i/gen_trigger_regs.tmatch_value_q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/cs_registers_i/gen_trigger_regs.tmatch_value_q_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/cs_registers_i/gen_trigger_regs.tmatch_value_q_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/cs_registers_i/gen_trigger_regs.tmatch_value_q_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/cs_registers_i/gen_trigger_regs.tmatch_value_q_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/cs_registers_i/gen_trigger_regs.tmatch_value_q_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/cs_registers_i/gen_trigger_regs.tmatch_value_q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/cs_registers_i/gen_trigger_regs.tmatch_value_q_reg[22]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/cs_registers_i/gen_trigger_regs.tmatch_value_q_reg[25]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/cs_registers_i/gen_trigger_regs.tmatch_value_q_reg[26]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/cs_registers_i/gen_trigger_regs.tmatch_value_q_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/ex_stage_i/regfile_waddr_lsu_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/ex_stage_i/regfile_waddr_lsu_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/ex_stage_i/regfile_waddr_lsu_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/ex_stage_i/regfile_waddr_lsu_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/ex_stage_i/regfile_waddr_lsu_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/ex_stage_i/regfile_we_lsu_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/id_stage_i/controller_i/illegal_insn_q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0 has an input control pin cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/gen_wr_b.gen_byte_narrow.for_mem_cols[1].mem_reg_0_0_0/ADDRARDADDR[14] (net: cv32e40p_memory_i/fpga_tdp_ram_i/xpm_memory_tdpram_inst/xpm_memory_base_inst/addra[14]) which is driven by a register (core_i/id_stage_i/controller_i/jump_done_q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+

@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../../cv32e40p-vivado_synthesis/bhv" --include "../../../../../cv32e40p-vivado_synthesis/example_tb/core/hwlp_test" --include "../../../../../cv32e40p-vivado_synthesis/example_tb/core/mem_stall" --include "../../../../../cv32e40p-vivado_synthesis/example_tb/core/interrupt" \
+"../../../../../cv32e40p-vivado_synthesis/rtl/fpga_tdp_ram.sv" \
+"../../../../../cv32e40p-vivado_synthesis/example_tb/core/tb_fpga_tdp_ram.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

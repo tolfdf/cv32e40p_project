@@ -1,0 +1,1 @@
+-debug "typical" -timescale "1ns/1ps" -top "tb_top2" -snapshot "tb_top2_sim" -L "xpm" -L "xil_defaultlib" 

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top2_sim.wdb" id="1">
+         <top_modules>
+            <top_module name="cv32e40p_apu_core_pkg" />
+            <top_module name="cv32e40p_fpu_pkg" />
+            <top_module name="cv32e40p_pkg" />
+            <top_module name="tb_top2" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="689877fs"></ZoomStartTime>
+      <ZoomEndTime time="8003405fs"></ZoomEndTime>
+      <Cursor1Time time="5300000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="142"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/tb_top2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/core_i/instr_req_o" type="logic">
+      <obj_property name="ElementShortName">instr_req_o</obj_property>
+      <obj_property name="ObjectShortName">instr_req_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/core_i/instr_gnt_i" type="logic">
+      <obj_property name="ElementShortName">instr_gnt_i</obj_property>
+      <obj_property name="ObjectShortName">instr_gnt_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/core_i/instr_rvalid_i" type="logic">
+      <obj_property name="ElementShortName">instr_rvalid_i</obj_property>
+      <obj_property name="ObjectShortName">instr_rvalid_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/core_i/instr_rdata_i" type="array">
+      <obj_property name="ElementShortName">instr_rdata_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_rdata_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/core_i/if_stage_i/pc_if_o" type="array">
+      <obj_property name="ElementShortName">pc_if_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_if_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/core_i/if_stage_i/pc_id_o" type="array">
+      <obj_property name="ElementShortName">pc_id_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_id_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/core_i/data_addr_o" type="array">
+      <obj_property name="ElementShortName">data_addr_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_addr_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/core_i/data_wdata_o" type="array">
+      <obj_property name="ElementShortName">data_wdata_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_wdata_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/core_i/data_rdata_i" type="array">
+      <obj_property name="ElementShortName">data_rdata_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_rdata_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/core_i/data_req_o" type="logic">
+      <obj_property name="ElementShortName">data_req_o</obj_property>
+      <obj_property name="ObjectShortName">data_req_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/core_i/data_we_o" type="logic">
+      <obj_property name="ElementShortName">data_we_o</obj_property>
+      <obj_property name="ObjectShortName">data_we_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/core_i/data_gnt_i" type="logic">
+      <obj_property name="ElementShortName">data_gnt_i</obj_property>
+      <obj_property name="ObjectShortName">data_gnt_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/core_i/data_rvalid_i" type="logic">
+      <obj_property name="ElementShortName">data_rvalid_i</obj_property>
+      <obj_property name="ObjectShortName">data_rvalid_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/tests_passed" type="logic">
+      <obj_property name="ElementShortName">tests_passed</obj_property>
+      <obj_property name="ObjectShortName">tests_passed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/tests_failed" type="logic">
+      <obj_property name="ElementShortName">tests_failed</obj_property>
+      <obj_property name="ObjectShortName">tests_failed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/exit_valid" type="logic">
+      <obj_property name="ElementShortName">exit_valid</obj_property>
+      <obj_property name="ObjectShortName">exit_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/exit_value" type="array">
+      <obj_property name="ElementShortName">exit_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">exit_value[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/cv32e40p_memory_i/uart_tx_i/bit_cnt" type="array">
+      <obj_property name="ElementShortName">bit_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/cv32e40p_memory_i/uart_tx_i/shift_reg" type="array">
+      <obj_property name="ElementShortName">shift_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">shift_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/cv32e40p_memory_i/uart_tx_i/uart_tx_o" type="logic">
+      <obj_property name="ElementShortName">uart_tx_o</obj_property>
+      <obj_property name="ObjectShortName">uart_tx_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top2/core_memory/cv32e40p_memory_i/uart_tx_i/BAUD_DIV" type="array">
+      <obj_property name="ElementShortName">BAUD_DIV[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BAUD_DIV[31:0]</obj_property>
+   </wvobject>
+</wave_config>

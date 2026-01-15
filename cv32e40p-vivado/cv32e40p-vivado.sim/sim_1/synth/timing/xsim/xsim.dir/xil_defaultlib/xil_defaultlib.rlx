@@ -1,0 +1,6 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado/cv32e40p-vivado.sim/sim_1/synth/timing/xsim/tb_top2_time_synth.v,1765975743,verilog,,,,cv32e40p_aligner;cv32e40p_alu;cv32e40p_alu_div;cv32e40p_controller;cv32e40p_core;cv32e40p_core_memory;cv32e40p_cs_registers;cv32e40p_decoder;cv32e40p_ex_stage;cv32e40p_fifo;cv32e40p_id_stage;cv32e40p_if_stage;cv32e40p_int_controller;cv32e40p_load_store_unit;cv32e40p_memory;cv32e40p_mult;cv32e40p_obi_interface;cv32e40p_popcnt;cv32e40p_prefetch_buffer;cv32e40p_prefetch_controller;cv32e40p_register_file;cv32e40p_sleep_unit;fpga_tdp_ram;glbl;xpm_memory_base;xpm_memory_tdpram,,,../../../../../../cv32e40p-vivado_synthesis/bhv;../../../../../../cv32e40p-vivado_synthesis/example_tb/core/hwlp_test;../../../../../../cv32e40p-vivado_synthesis/example_tb/core/interrupt;../../../../../../cv32e40p-vivado_synthesis/example_tb/core/mem_stall,,,,,
+C:/Users/mpakasa/Desktop/cv32e40p_project/cv32e40p-vivado_synthesis/example_tb/core/tb_top2.sv,1765878796,systemVerilog,,,,tb_top2,,,../../../../../../cv32e40p-vivado_synthesis/bhv;../../../../../../cv32e40p-vivado_synthesis/example_tb/core/hwlp_test;../../../../../../cv32e40p-vivado_synthesis/example_tb/core/interrupt;../../../../../../cv32e40p-vivado_synthesis/example_tb/core/mem_stall,,,,,
